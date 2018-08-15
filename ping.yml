@@ -1,5 +1,8 @@
 - name: Ping Sample
-  hosts: localhost
+  hosts: all
   tasks:
     - name: do ping
-      shell: ping localhost -c 3
+      action: ping
+      
+    - name: do cmd
+      shell: ls
