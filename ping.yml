@@ -9,4 +9,4 @@
       register: result
 
     - name: report status
-      debug: msg={{ result.results[0].stdout_lines }} verbosity=0
+      debug: msg={{ result }} verbosity=0
