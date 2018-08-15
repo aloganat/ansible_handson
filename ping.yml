@@ -1,5 +1,7 @@
 - name: Ping Sample
-  hosts: all
+  hosts: localhost
+  become: yes
+  become_user: root
   tasks:
     - name: do ping
       action: ping
