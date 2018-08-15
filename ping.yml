@@ -14,3 +14,11 @@
 
     - name: report status
       debug: msg={{ result }} verbosity=0
+
+    - name: do cmd
+      shell: ping www.google.com -c 1
+      register: result
+
+    - name: report status
+      debug: msg={{ result }} verbosity=0
+
