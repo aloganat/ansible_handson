@@ -1,4 +1,5 @@
 - name: Ping Sample
-  hosts: all
+  hosts: localhost
   tasks:
-    - action: ping
+    - name: do ping
+      shell: ping www.google.com
