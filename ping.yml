@@ -1,5 +1,7 @@
----
-- hosts:
-    - localhost
+- name: Hello World Sample
+  hosts: all
   tasks:
-    - action: ping
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+ 
