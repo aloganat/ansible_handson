@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 - hosts:
     - all
   tasks:
     - action: ping
+=======
+---
+
+- hosts: all
+  tasks:
+- ping:
+>>>>>>> e94f4d9437a2e2e7e889a64f3799f00736903d5b
