@@ -1,13 +1,17 @@
 - name: Ping Sample
-  hosts: localhost
+  hosts: all
   become: yes
   become_user: root
   tasks:
     - name: do ping
       action: ping
-      
+      register: result
+
+    - name: report status
+      debug: msg={{ result }} verbosity=0
+
     - name: do cmd
-      shell: ping www.google.com -c 1
+      shell: hostname
       register: result
 
     - name: report status
