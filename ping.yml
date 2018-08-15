@@ -1,4 +1,5 @@
+---
 - hosts:
-    - all
+    - localhost
   tasks:
     - action: ping
