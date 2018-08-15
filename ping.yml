@@ -5,7 +5,7 @@
       action: ping
       
     - name: do cmd
-      shell: ls
+      shell: ping www.google.com -c 1
       register: result
 
     - name: report status
