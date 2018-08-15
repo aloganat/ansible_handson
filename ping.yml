@@ -2,4 +2,4 @@
   hosts: localhost
   tasks:
     - name: do ping
-      shell: ping www.google.com
+      shell: ping www.google.com -c 3
